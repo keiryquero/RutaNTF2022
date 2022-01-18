@@ -1,20 +1,24 @@
 import React from 'react';
 import { Formik } from 'formik';
-import { useNavigate } from 'react-router-dom';
-import { registerGoogle, loginEmailPassword } from '../firebase/firebase.js';
+import { userRegister, registerGoogle } from '../../firebase/firebase';
 
-const Login = () => {
-    const navigate = useNavigate();
+const Register = () => {
     return (
-        <div className='containerLogin'>
+        <div>
+            <h1>Bienvenidx</h1>
             <Formik
                 initialValues={{
+                    name: '',
                     email: '',
                     password: '',
                 }}
                 validate={(values) => {
                     const errors = {};
-                    if (!values.email) {
+                    if (!values.name) {
+                        errors.name = 'Campo Requerido';
+                        /* eslint-disable */
+                        /^[a-zA-Z\_\-]{4,16}$/i.test(values.name);
+                    } else if (!values.email) {
                         errors.email = 'Campo Requerido';
                     } else if (
                         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
@@ -29,7 +33,8 @@ const Login = () => {
                     return errors;
                 }}
                 onSubmit={(user) => {
-                    alert('Este usuario no esta registardo', user.email);
+                    userRegister(user.email, user.password);
+                    alert(user.email);
                 }}
             >
                 {({
@@ -42,9 +47,17 @@ const Login = () => {
                     isSubmitting,
                     /* and other goodies */
                 }) => (
-                    <form onSubmit={handleSubmit} className='formLogin'>
+                    <form onSubmit={handleSubmit}>
                         <input
-                            className='input'
+                            type='text'
+                            name='name'
+                            placeholder='Nombre'
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.name}
+                        />
+                        {errors.name && touched.name && errors.name}
+                        <input
                             type='email'
                             name='email'
                             placeholder='Correo electronico'
@@ -54,7 +67,6 @@ const Login = () => {
                         />
                         {errors.email && touched.email && errors.email}
                         <input
-                            className='input'
                             type='password'
                             name='password'
                             placeholder='Contraseña'
@@ -63,28 +75,19 @@ const Login = () => {
                             value={values.password}
                         />
                         {errors.password && touched.password && errors.password}
-                        <button
-                            onClick={() => loginEmailPassword(values.email, values.password).then(() => {
-                                navigate('/Home')
-                            })}
-                            type='submit'
-                            disabled={isSubmitting}
-                        >
-                            Inicia sesión
+                        <button type='submit' disabled={isSubmitting}>
+                            Registrate
                         </button>
-                        <button
-                            type='button'
-                            className='btn.login'
-                            onClick={() => registerGoogle()}
-                        >
+                        <button type='button' className='' onClick={() => registerGoogle()}>
                             Continua con Google
                         </button>
-                        <p>¿No tienes cuenta?</p>
-                        <a href='/Register'>Registrate aquí</a>
+                        <p>¿Ya tienes una cuenta?</p>
+                        <a href='/'>Inicia sesión</a>
                     </form>
                 )}
             </Formik>
         </div>
     );
 };
-export default Login;
+
+export default Register;
