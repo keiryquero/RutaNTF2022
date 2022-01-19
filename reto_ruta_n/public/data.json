@@ -155,7 +155,7 @@
             "link": "https://makeitreal.camp/introduccion-a-javascript"
         },
         {
-            "nombre": "Fullstack",
+            "nombre": "Fullstack - Básico",
             "nivel": "Básico",
             "duración": "5 meses, 256 horas",
             "habilidades": "Introducción a los productos digitales, Sketch, Wireframe, Mockup y Prototipos. HTML y CSS3. Introducción y estructura de HTML. Introducción al CSS3 Selectores HTML + CSS3 Ejercicios HTML + CSS3. Elementos anidados HTML y Modelos de caja (Box model). Diseño adaptativo.",
@@ -164,7 +164,7 @@
             "link": "https://ime.edu.co/"
         },
         {
-            "nombre": "Fullstack",
+            "nombre": "Fullstack - Intermedio",
             "nivel": "Intermedio",
             "duración": "5 meses, 256 horas",
             "habilidades": "Programación Web (Servidores, dominios y protocolos http y https). Introducción al JavaScript, tipo de datos, variables y arreglos, condicionales (Estructuras de Control. if/else.), ciclos e iteradores, funciones - Scope - Métodos para cadenas de textos. Casos prácticos: Java Script y pagina web DOM: Modelo de Objetos del documento. Timers: tiempo y fecha, local storage, session storage, procesos asíncronos y síncronos. Peticiones HTTP, socialización y puesta a punto del sitio web.",
@@ -173,7 +173,7 @@
             "link": "https://ime.edu.co/"
         },
         {
-            "nombre": "Fullstack",
+            "nombre": "Fullstack - Avanzado",
             "nivel": "Avanzado",
             "duración": "5 meses, 256 horas",
             "habilidades": "Lenguaje de JavaScript y se proponen varios casos prácticos para el dominio del lenguaje y la solución de problemas tecnológicos dentro de las empresas. PostgresSQL y se contemplan los temas de autenticación y priorización API.",
