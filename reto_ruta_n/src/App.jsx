@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './view/authentication/Login';
-import Register from './view/authentication/Register';
 import Home from './view/home/Home';
 import InitialTest from './view/test/InitialTest';
 import TestNoProgrammer from './view/test-no-programmer/TestNoProgrammer';
@@ -18,7 +17,6 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/Register' element={<Register />} />
           <Route path='/Home' element={<Home />} />
           <Route path='/InitialTest' element={<InitialTest />} />
           <Route path='/TestUser' element={<TestNoProgrammer />} />

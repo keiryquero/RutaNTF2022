@@ -6,9 +6,8 @@ const Home = () => {
     const navigate = useNavigate();
     return (
         <>
-            <h3>Hola </h3> 
+            <h3>Hola </h3>
             <p>¿Qué te gustaría hacer?</p>
-
             <section className='sect-btn-home'>
                 <Button onClick={() => navigate('/InitialTest')}>Realizar test</Button>
                 <Button onClick={() => navigate('/')} >Resultados test anteriores</Button>
@@ -16,5 +15,4 @@ const Home = () => {
         </>
     );
 };
-
 export default Home;

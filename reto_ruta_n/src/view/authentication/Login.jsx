@@ -1,91 +1,55 @@
 import React from 'react';
-import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
-import { registerGoogle, loginEmailPassword } from '../../firebase/firebase.js';
-/* import { Box } from '@chakra-ui/react' */
+/* import { registerGoogle } from '../../firebase/firebase.js'; */
+import { Box, Button, Image } from '@chakra-ui/react';
+import { userRegister } from '../../firebase/firebase';
+import { FcGoogle } from 'react-icons/fc';
+import logoBlanco from '../../img/Logo-f-blanco-1.svg';
+import {
+    GoogleAuthProvider,
+    signInWithPopup,
+    getAuth
+} from 'firebase/auth';
 
 const Login = () => {
     const navigate = useNavigate();
+
+    const registerGoogle = () => {
+        const provider = new GoogleAuthProvider();
+        const auth = getAuth();
+        signInWithPopup(auth, provider).then((result) => {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+            // The signed-in user info.
+            const { user } = result;
+            console.log(token, user);
+            navigate('/Home')
+        })
+    };
+
     return (
-        <div className='containerLogin'>
-            <Formik
-                initialValues={{
-                    email: '',
-                    password: '',
-                }}
-                validate={(values) => {
-                    const errors = {};
-                    if (!values.email) {
-                        errors.email = 'Campo Requerido';
-                    } else if (
-                        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-                    ) {
-                        errors.email = 'Correo invalido';
-                    } else if (!values.password) {
-                        errors.password = 'Campo Requerido';
-                        /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/i.test(
-                            values.password
-                        );
-                    }
-                    return errors;
-                }}
-                onSubmit={(user) => {
-                    alert('Este usuario no esta registardo', user.email);
-                }}
-            >
-                {({
-                    values,
-                    errors,
-                    touched,
-                    handleChange,
-                    handleBlur,
-                    handleSubmit,
-                    isSubmitting,
-                    /* and other goodies */
-                }) => (
-                    <form onSubmit={handleSubmit} className='formLogin'>
-                        <input
-                            className='input'
-                            type='email'
-                            name='email'
-                            placeholder='Correo electronico'
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.email}
-                        />
-                        {errors.email && touched.email && errors.email}
-                        <input
-                            className='input'
-                            type='password'
-                            name='password'
-                            placeholder='Contraseña'
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.password}
-                        />
-                        {errors.password && touched.password && errors.password}
-                        <button
-                            onClick={() => loginEmailPassword(values.email, values.password).then(() => {
-                                navigate('/Home')
-                            })}
-                            type='submit'
-                            disabled={isSubmitting}
-                        >
-                            Inicia sesión
-                        </button>
-                        <button
-                            type='button'
-                            className='btn.login'
-                            onClick={() => registerGoogle()}
-                        >
-                            Continua con Google
-                        </button>
-                        <p>¿No tienes cuenta?</p>
-                        <a href='/Register'>Registrate aquí</a>
-                    </form>
-                )}
-            </Formik>
-        </div>
+        <Box>
+            <Image src={logoBlanco} alt='logoMDT' />
+            <Button leftIcon={<FcGoogle />} colorScheme='teal' size='lg' onClick={() => registerGoogle()}>
+                Ingresa con Google
+            </Button>
+
+
+            {/*  <div className='containerLogin'>
+                <button
+                    type='button'
+                    className='btn.login'
+                    onClick={() => registerGoogle()}
+                >
+                    Continua con Google
+                </button>
+                <p>¿No tienes cuenta?</p>
+                <a href='/Register'>Registrate aquí</a>
+            </div>
+            )
+} */}
+        </Box>
     );
 };
 export default Login;

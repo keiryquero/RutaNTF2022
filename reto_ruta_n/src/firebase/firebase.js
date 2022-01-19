@@ -30,18 +30,7 @@ const userRegister = (email, password) => {
     );
 };
 
-const registerGoogle = () => {
-    const provider = new GoogleAuthProvider();
-    const auth = getAuth();
-    signInWithPopup(auth, provider).then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const { user } = result;
-        console.log(token, user);
-    });
-};
+
 
 const loginEmailPassword = (email, password) => {
     const auth = getAuth();
@@ -55,4 +44,4 @@ const loginEmailPassword = (email, password) => {
 
 };
 
-export { userRegister, registerGoogle, loginEmailPassword }
+export { userRegister, loginEmailPassword }
