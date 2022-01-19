@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import { registerGoogle, loginEmailPassword } from '../../firebase/firebase.js';
+/* import { Box } from '@chakra-ui/react' */
 
 const Login = () => {
     const navigate = useNavigate();

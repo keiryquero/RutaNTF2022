@@ -1,0 +1,486 @@
+[
+    {
+      "id": "1",
+      "ruta": "Programación básica",
+      "cursos":[
+          {
+            "nombre":"Programación Básica",
+            "nivel": "Básico",
+            "duracion": "S/D",
+            "habilidades":"Entrenamiento desde cero en programcion básica",
+            "institución":"Apps.Co MInTIC",
+            "costo":"Gratuito",
+            "link":" https://innpulsacolombia.com/apps-co/cursos/show/5.htm"
+
+          },
+          {
+            "nombre":"Curso básico de programación ",
+            "nivel": "Básico",
+            "duracion": "11 horas",
+            "habilidades":"Habilidades básicas de progrmación, principalmente Java.",
+            "institución":"Platzi",
+            "costo":"Gratuito",
+            "link":" https://platzi.com/clases/programacion-basica/"
+
+          },
+          {
+            "nombre":"Fundamentos de Programación - Aprende a programar desde cero",
+            "nivel": "Básico",
+            "duracion": "29 horas",
+            "habilidades":"Adquiera las técnicas y metodologías básicas de programación para luego poder migrar hacia los mejores lenguajes.",
+            "institución":"Udemy",
+            "costo":"US 9.99 con registro en plataforma",
+            "link":"https://www.udemy.com/course/fundamentos-de-programacion-aprende-a-programar-desde-cero/"
+
+          },
+          {
+            "nombre":"Programación",
+            "nivel": "Básico",
+            "duracion": "S/D",
+            "habilidades":"Esta unidad introduce conceptos fundamentales de programación.",
+            "institución":"Khan Academy",
+            "costo":"Gratuito",
+            "link":"https://es.khanacademy.org/computing/ap-computer-science-principles/programming-101"
+
+          },
+          {
+            "nombre":"Introducción a la Programación MInTIC_Programa Conecta Empleo Fundación Telefónica",
+            "nivel": "Básico",
+            "duracion": "30 horas",
+            "habilidades":"Descubre que tu idea puede llegar a convertirse en una aplicación, un programa,un software,en definitiva, para Mayores de 18 años, Residentes en  Colombia",
+            "institución":"MinTIC ",
+            "costo":"Gratuito",
+            "link":"https://conectaempleo-formacion.fundaciontelefonica.com/web/co-introduccion-a-la-programacion-mintic-ed-1 "
+
+          },
+          {
+            "nombre":"Curso de PHP",
+            "nivel": "Básico a nivel avanzado",
+            "duracion": "48 horas",
+            "habilidades":"Dominar el uso de variables, condicionales, ciclos y funciones, Dominar el paradigma de Programación Orientada a Objetos,Conocer, comprender y aplicar los formularios con php,Conocer y comprender los fundamentos de las bases de datos,Relacionar php con el gestor de bases de datos MySQL, Dominar el patrón modelo, vista y controlador",
+            "institución":"EdutIn",
+            "costo":"Gratuito",
+            "link":"Edutin Academyhttps://edutin.com "
+
+          }
+      ]
+      
+    },
+    {
+        "id": "2",
+        "ruta": "FrontEnd",
+        "cursos": [
+            {
+                "nombre": "Desarrollo Web Frontend",
+                "nivel": "Básico",
+                "duración": "5 meses",
+                "habilidades": "Capacítate en una de las tecnologías más demandadas en el área del front-end, aumenta tus posibilidades de empleabilidad y conviértete en un mejor desarrollador Javascript. React está en todos lados, actualmente es la librería más popular cuando se trata de desarrollar aplicaciones web.",
+                "institución": "Acamica-Digital House",
+                "costo": "$ 2.752.000 - Aplican Becas ",
+                "link": "https://www.academiageek.co/becas/"
+            },
+            {
+                "nombre": "Curso de Frontend Developer",
+                "nivel": "Básico",
+                "duración": "15 horas",
+                "habilidades": "Domina las bases de HTML y CSS. Conoce la anatomía de un documento HTML, sus elementos y las propiedades de CSS. Maqueta las pantallas principales de tu página web con responsive design.",
+                "institución": "Platzi",
+                "costo": "$ 570.000 al año por persona - Gratis primeros 4 cursos",
+                "link": "https://platzi.com/cursos/frontend-developer/"
+            },
+            {
+                "nombre": "Desarrollo Web Front end",
+                "nivel": "Básico",
+                "duración": "9 meses",
+                "habilidades": "Proceso de formación en desarrollo web y móbil Front-End, basada en proyectos, recreando las exigencias y los temas de alta demanda en el ámbito laboral. El curso fomenta el desarrollo de habilidaes técnicas y blandas.",
+                "institución": "Academia Geek-Makaia",
+                "costo": "$ 3.843.700 - Puedes aplicar a becas",
+                "link": "https://academiageek.co/admisiones-2/"
+            },
+            {
+                "nombre": "Desarrollador Frontend",
+                "nivel": "Básico",
+                "duración": "Curso abierto",
+                "habilidades": "El desarrollador front-end utiliza las tecnologías de la información y comunicación para plasmar el contenido de manera que los usuarios lo puedan aprovechar al máximo. Puede convertir cualquier sitio web en un fenómeno mundial.",
+                "institución": "Aprende.org - Fundación Carlos Sim",
+                "costo": "Gratuito",
+                "link": "https://aprende.org/pages.php?r=.cfcs_course&tagID=6726&load=6735&brandID=&program_origin="
+            }
+        ]
+    },
+{
+    "id": "3",
+    "ruta": "BackEnd",
+    "cursos": [
+        {
+            "nombre": "Curso de Introducción al Desarrollo Backend",
+            "nivel": "Básico",
+            "duración": "9 horas",
+            "habilidades": "Fundamentos del desarrollo web, diseño de una API. Lenguaje y framework a escoger para backend",
+            "institución": "Platzi",
+            "costo": "Membresía anual variable $569.000",
+            "link": "https://platzi.com/cursos/introduccion-backend/"
+        },
+        {
+            "nombre": "Desarrollo Web Backend con orientación JavaScript",
+            "nivel": "Básico a Intermedio",
+            "duración": "9 meses",
+            "habilidades": "Habilidades técnicas de desarrollo web Back-end",
+            "institución": "Academia Geek -Makaia",
+            "costo": "$3.843.700, puedes aplicar a una beca si cumples los requisitos. También tienes opciones de financiación: Aplicar a un crédito del Fondo SumanTI (fondo creado por Comfama, Ruta N y Sura, con tasas bajas, periodo de gracia hasta 12 meses, plazo de pago hasta 24 meses, otros beneficios)",
+            "link": "https://makaia.org/portfolio/academia-geek/"
+        }
+    ]
+},
+{
+    "id": "4",
+    "ruta": "Fullstack",
+    "cursos": [
+        {
+            "nombre": "Desarrollador web full-stack 8 Cursos Linkedin learning",
+            "nivel": "Básico",
+            "duración": "20 horas",
+            "habilidades": "Fundamentos del desarrollo web: Full Stack, JavaScript esencial, JavaScript avanzado, MySQL esencial, GitHub, desarrollo web, SCRUM metodología agíl",
+            "institución": "Linkedin learning",
+            "costo": "Gratuito",
+            "link": "https://opportunity.linkedin.com/es-es/skills-for-in-demand-jobs/software-developer?trk=li-jobsindemand-softwaredev-es"
+        },
+        {
+            "nombre": "Introducción JavaScript Make it real",
+            "nivel": "Básico",
+            "duración": "2 semanas",
+            "habilidades": "Este curso te permitirá desarrollar las habilidades básicas para iniciar el programa Desarrollo Web Full Stack. Como Primeros pasos con JavaScript, condicionales, ciclos, arreglos, strings, funciones, objetos, programación funcional, ES6",
+            "institución": "Make It Real",
+            "costo": "Curso gratuito con el apoyo de MInComercio, INNpulsa",
+            "link": "https://makeitreal.camp/introduccion-a-javascript"
+        },
+        {
+            "nombre": "Fullstack - Básico",
+            "nivel": "Básico",
+            "duración": "5 meses, 256 horas",
+            "habilidades": "Introducción a los productos digitales, Sketch, Wireframe, Mockup y Prototipos. HTML y CSS3. Introducción y estructura de HTML. Introducción al CSS3 Selectores HTML + CSS3 Ejercicios HTML + CSS3. Elementos anidados HTML y Modelos de caja (Box model). Diseño adaptativo.",
+            "institución": "IME Escuelas Técnicas",
+            "costo": "$1.800.000 La Próxima cohorte será para Feb. 2022.",
+            "link": "https://ime.edu.co/"
+        },
+        {
+            "nombre": "Fullstack - Intermedio",
+            "nivel": "Intermedio",
+            "duración": "5 meses, 256 horas",
+            "habilidades": "Programación Web (Servidores, dominios y protocolos http y https). Introducción al JavaScript, tipo de datos, variables y arreglos, condicionales (Estructuras de Control. if/else.), ciclos e iteradores, funciones - Scope - Métodos para cadenas de textos. Casos prácticos: Java Script y pagina web DOM: Modelo de Objetos del documento. Timers: tiempo y fecha, local storage, session storage, procesos asíncronos y síncronos. Peticiones HTTP, socialización y puesta a punto del sitio web.",
+            "institución": "IME Escuelas Técnicas",
+            "costo": "$1.800.000 La Próxima cohorte será para Feb. 2022.",
+            "link": "https://ime.edu.co/"
+        },
+        {
+            "nombre": "Fullstack - Avanzado",
+            "nivel": "Avanzado",
+            "duración": "5 meses, 256 horas",
+            "habilidades": "Lenguaje de JavaScript y se proponen varios casos prácticos para el dominio del lenguaje y la solución de problemas tecnológicos dentro de las empresas. PostgresSQL y se contemplan los temas de autenticación y priorización API.",
+            "institución": "IME Escuelas Técnicas",
+            "costo": "$1.800.000 La Próxima cohorte será para Feb. 2022.",
+            "link": "https://ime.edu.co/"
+        },
+        {
+            "nombre": "Desarrollador full-stack junior Bootcamp",
+            "nivel": "Básico",
+            "duración": "5 meses, 20 semanas",
+            "habilidades": "Front-end: HTML semántico, CSS, JavaScript, React/Angular, Consumo REST, SEO. Back-end: Bases de datos y REST. Transversales: Git, Buenas prácticas, patrones de diseño, código limpio, arquitectura (básico), pruebas unitarias. Introducción a integración continua, tips de seguridad, SOLID y protocolo HTTP.",
+            "institución": "Digital School",
+            "costo": "$2.950.000.",
+            "link": "https://digitalschoolcolombia.com/sitio/programas/bootcamp/"
+        },
+        {
+            "nombre": "Desarrollo Web Full Stack",
+            "nivel": "Nivel_1 Se requiere que el estudiante tenga manejo básico de herramientas informáticas.",
+            "duración": "320 horas de estudio: 160 horas sincrónicas a través de videoconferencias en sesiones del formador y los beneficiarios conectados en tiempo real. 160 horas de actividades asincrónicas alojadas en nuestro Sistema de Gestión de Aprendizaje -LMS-.",
+            "habilidades": "Fundamentos de Programación, Fundamentos de Programación, Fundamentos de HTML, HTML Etiquetas atributos Tablas, HTML DIV Formularios, CSS3 intro DOM, CSS3 Modelo de cajas, CSS3 Flexbox, CSS3 Grid, CSS3 Media Queries, Bootstrap Intro, Bootstrap Conceptos avanzados, SASS Y Otros Frameworks, JavaScript Intro-Variables, JavaScript-String Methods- #s- Operadores, JavaScript Booleans-Objetos, JavaScript Arrays, JavaScript Funciones, JavaScript Estructuras de Control, JavaScript Iteradores, JavaScript Array Methods, JavaScript Eventos, JavaScript Prototypes-POO, JavaScript Promises, Callbacks, Asincronía, JavaScript APIs FetchAsync Wait.",
+            "institución": "SAPIENCIA/PYGMALION",
+            "costo": "Gratuito Online",
+            "link": "https://sapiencia.gov.co/talento-especializado/"
+        },
+        {
+            "nombre": "Desarrollo Web Full Stack (Backend) SQL y MONGO, NODE JS y Express, Dockers, Ciberseguridad",
+            "nivel": "Nivel_3 Se requieren conocimientos previos en JavaScript, HTML5, CSS3, fundamentos y metodologías de programación.",
+            "duración": "320 horas de estudio: 160 horas sincrónicas a través de videoconferencias en sesiones del formador y los beneficiarios conectados en tiempo real. 160 horas de actividades asincrónicas alojadas en nuestro Sistema de Gestión de Aprendizaje -LMS-.",
+            "habilidades": "Estructuras de datos, Bases de Datos, SQL,MySQL, Oracle, SQL,MySQL, Oracle, POO, Node JS / npm /Express, Node JS / npm /Express, Express + Handlebars, Node JS /Creación API REST. 10. Node JS / SPA con JS, Web Sockets, MongoDB, Node Js/ Mongoose, ORM, PHP, Laravel, Laravel, Testing Unit, Testing Unit, Docker, Docker, Serveless y AWS, Serveless y AWS, Ciberseguridad y Buenas Prácticas, Refactoring de Proyectos",
+            "institución": "SAPIENCIA/PYGMALION",
+            "costo": "Gratuito Online",
+            "link": "https://sapiencia.gov.co/talento-especializado/"
+        }
+    ]
+},
+    {
+        "id": "5",
+        "ruta": "Python",
+        "cursos":[
+            {
+                "nombre":"Aprende a programar con Python-RUTA COURSERA",
+                "nivel": "Básico",
+                "duracion": "15 horas",
+                "habilidades":"Comprender los conceptos básicos de programación,entender cómo la computadora interpreta el código,Crear tus propios scripts en Python y ejecutarlos (tanto los propios como los de otras personas), leer e interpretar código básico escrito en Python",
+                "institución":"Coursera Universidad Austral",
+                "costo":"S/D",
+                "link":"https://es.coursera.org/learn/estructura-de-datos-python?specialization=python-espanol"
+    
+              },
+              {
+                "nombre":"Curso_1_Introducción a la programación con Python",
+                "nivel": "Básico",
+                "duracion": "17 horas",
+                "habilidades":"Comprender los conceptos básicos de programación,entender cómo la computadora interpreta el código,Crear tus propios scripts en Python y ejecutarlos (tanto los propios como los de otras personas), leer e interpretar código básico escrito en Python",
+                "institución":"Coursera Universidad Austral",
+                "costo":"S/D",
+                "link":"https://es.coursera.org/learn/introduccion-python?specialization=python-espanol"
+    
+              },
+              {
+                "nombre":"Curso_2_Estructuras de datos en Python",
+                "nivel": "Básico",
+                "duracion": "15 horas",
+                "habilidades":"Utilizar strings,Comprender las diferentes estructuras de datos que provee Python,Comprender cómo se trabaja con archivos,comprender qué son las excepciones y el uso de los decoradores",
+                "institución":"Coursera Universidad Austral",
+                "costo":"S/D",
+                "link":"https://es.coursera.org/learn/estructura-de-datos-python?specialization=python-espanol"
+    
+              },
+              {
+                "nombre":"Curso_3_Programación Orientada a Objetos con Python",
+                "nivel": "Básico",
+                "duracion": "9 horas",
+                "habilidades":"Comprender qué es un programa orientado a objetos y los conceptos del paradigma asociado, para diseñar sistemas siguiendo las buenas prácticas,Realizar diagramas de objetos, de clases y de secuencia,Realizar pruebas unitarias automáticas del sistema,Realizar refactorizaciones de código y utilizar la técnica de programación Test Driven Development (TDD)",
+                "institución":"Coursera Universidad Austral",
+                "costo":"S/D",
+                "link":"https://es.coursera.org/learn/programacion-python-objetos"
+    
+              },
+              {
+                "nombre":"Curso_4_Manejo de bases de datos con Python",
+                "nivel": "Básico",
+                "duracion": "16 horas",
+                "habilidades":"Comprender qué son y cómo funcionan las bases de datos relacionales,Crear sus propias bases de datos relacionales en SQLite,Construir sistemas orientados a objetos que persistan sus datos en una base de datos relacional utilizando el mapeo objeto relacional de SQLAlchemy,Escribir consultas SQL,Comprender que es el Mapeo Objeto",
+                "institución":"Coursera Universidad Austral",
+                "costo":"S/D",
+                "link":"https://es.coursera.org/learn/python-base-de-datos"
+    
+              },
+              {
+                "nombre":"Curso de Python desde 0,Unipython",
+                "nivel": "Intermedio",
+                "duracion": "30 horas",
+                "habilidades":"Este curso te permitirá continuar tu formación de Python en sectores punteros como Visión Artificial, Data Scientist, Testeo de Aplicaciones, desarrollo Blockchain, Videojuegos, Machine Learning, Desarrollo Web etc. Ramas profesionales vanguardistas que las empresas tecnológicas solicitan cada día con ganancias más elevadas que en otras profesiones",
+                "institución":"Uniphython portal de España",
+                "costo":"S/D",
+                "link":"https://unipython.com/"
+    
+              },
+              {
+                "nombre":"Curso de Python desde 0,Unipython",
+                "nivel": "Intermedio",
+                "duracion": "30 horas",
+                "habilidades":"Este curso te permitirá continuar tu formación de Python en sectores punteros como Visión Artificial, Data Scientist, Testeo de Aplicaciones, desarrollo Blockchain, Videojuegos, Machine Learning, Desarrollo Web etc. Ramas profesionales vanguardistas que las empresas tecnológicas solicitan cada día con ganancias más elevadas que en otras profesiones",
+                "institución":"Uniphython portal de España",
+                "costo":"22 €",
+                "link":"https://unipython.com/"
+    
+              },
+              {
+                "nombre":"Curso NodeJS, ExpressJS,MongoDB y Unipyton",
+                "nivel": "Intermedio",
+                "duracion": "24 horas",
+                "habilidades":"Con este curso podrás,Instalar Node, Express y Mongo,",
+                "institución":"Uniphython portal de España",
+                "costo":"18 € ",
+                "link":"https://unipython.com/cursos/curso-nodejs-expressjs-y-mongodb/"
+    
+              }
+        ]
+    },
+    {
+        "id": "6",
+         "ruta": "Desarrollo Web",
+         "cursos": [
+             {
+                 "nombre": "Desarrollo Web con HMTL, CSS y Bootstrap 4! Curso desde cero",
+                 "nivel": "Básico",
+                 "duración": "2.43 horas",
+                 "habilidades": "Curso de HTML, CSS y Bootstrap 4 para principiantes, comienza a crear tus propios diseños web sin conocimientos previos!",
+                 "institución": "Undemy",
+                 "costo": "Gratuito",
+                 "link": "https://www.udemy.com/course/curso-html5-css3/"
+             },
+             {
+                 "nombre": "HTML/JS: hacer páginas web interactivas con jQuery",
+                 "nivel": "Básico",
+                 "duración": "Curso abierto",
+                 "habilidades": "Conoce al inventor y trata de usar jQuery en una página web.",
+                 "institución": "Khan Academy",
+                 "costo": "Gratuito",
+                 "link": "https://es.khanacademy.org/computing/computer-programming/html-js-jquery#jquery-intro"
+             },
+             {
+                 "nombre": "Aprender HTML y CSS",
+                 "nivel": "Principiante",
+                 "duración": "14 horas",
+                 "habilidades": "HTML, es un código utilizado para crear la estructura básica de un sitio web, como cabecera, pie de página, barras laterales, contenido. Con el vas a poder realizar funciones a través de etiquetas predefinidas, que pueden ser modificadas en estilos por medio de CSS. Por ende, estos lenguajes trabajan de la mano.",
+                 "institución": "Unipython",
+                 "costo": "Gratuito",
+                 "link": "https://unipython.com/"
+             },
+             {
+                 "nombre": "Curso de Programación Orientada a Objetos en Python",
+                 "nivel": "Principiante, conocimientos básicos en Python",
+                 "duración": "30 horas",
+                 "habilidades": "En este curso te mostraremos las ventajas de este paradigma de programación y como llevar la teoría de la programación orientada a objetos a código de python.",
+                 "institución": "Unipython",
+                 "costo": "Gratuito",
+                 "link": "https://unipython.com/"
+             }
+         ]
+     } ,
+     {"id": "7",
+        "ruta": "Análitica de datos",
+        "cursos": [
+            {
+                "nombre": "Análisis de datos",
+                "nivel": "Básico",
+                "duracion": "SD",
+                "habilidades": "Aprende cómo puede usarse 'big data' para mejorar algoritmos como traducción, reconocimiento de imágenes y recomendaciones.",
+                "institucion": "Khan Academy",
+                "costo": "Gratis",
+                "link": "https://es.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101"
+            },
+            {
+                "nombre": "Minería de Datos: Segmentación de Mercados",
+                "nivel": "Introductorio",
+                "duracion": "5 semanas estimadas 4–5 horas por semana",
+                "habilidades": "Comprenderás los conceptos relacionados con big data y minería de datos. Comprenderás los conceptos de la técnica segmentación de clientes K-means. Aplicarás el software RapidMiner para generar modelos de minería de datos.",
+                "institucion": "Red de Universidades Anáhuac",
+                "costo": "Gratis",
+                "link": "https://www.edx.org/es/course/mineria-de-datos-segmentacion-de-mercados"
+            },
+            {
+                "nombre": "Certificación en Data Mining / Mineria de Datos I-Data",
+                "nivel": "Intermedio. CONOCIMIENTOS PREVIOS: Es preciso que cada estudiante tenga un nivel básico de programación y estadística",
+                "duracion": "Por determinar tiempo de duración. 20 horas de laboratorio ",
+                "habilidades": "Estadística básica (análisis descriptivo), Medidas de tendencia central y de dispersión, Correlación. Gráficos y tablas resumen.,Modelos Lineales y no lineales, Estadística Multivariante, Algoritmos de Machine Learning (Aprendizaje automático) Métricas de evaluación de modelos.",
+                "institucion": "I-Data",
+                "costo": "Por validar costo x persona.",
+                "link": "http://idata.academy/data-mining/"
+            },
+            {
+                "nombre": "Curso de Introducción a la Analítica de Datos",
+                "nivel": "Intermedio.",
+                "duracion": "20 Horas",
+                "habilidades": "Analítica de datos en el mundo real. Obtención y limpieza de datos. Análisis exploratorio. Estadística Inferencial. Comunicación de resultados",
+                "institucion": "ITM",
+                "costo": "Público general: $208.000",
+                "link": "https://www.itm.edu.co/educacion-continua/cursos/introduccion-a-la-analitica-de-datos/"
+            },
+            {
+                "nombre": "Diplomado en Big Data",
+                "nivel": "Intermedio. Público general con intereses en el mundo del Big Data e Inteligencia de Negocios.",
+                "duracion": "100 horas",
+                "habilidades": "Introducción al Big Data, Datos Abiertos y Desarrollo Sostenible. Técnicas de Inteligencia de Negocios (Business Intelligence). Técnicas de Analítica de Datos. (Business Analytics). Gobierno de Datos.",
+                "institucion": "IU Pascual Bravo",
+                "costo": "Valor inversión: $ 1.900.000. Descuento del 25% para comunidad pascualina",
+                "link": "https://drive.google.com/file/d/1iKvxP22zcFyETaPGLmJ6cS2QAtpze1Vi/view?usp=sharing"
+            },
+            {
+                "nombre": "Analista de datos",
+                "nivel": "Intermedio.",
+                "duracion": "2 horas",
+                "habilidades": "Domina las herramientas esenciales que necesitas para convertirte en un experto en el análisis de datos y la ciencia de la información. Aprende las habilidades clave para ser un analista de datos efectivo utilizando Excel, Access y Power BI. ",
+                "institucion": "Linkedin",
+                "costo": "Gratuito.",
+                "link": "https://www.linkedin.com/learning/aprende-analisis-de-datos/el-analisis-de-datos-en-el-mundo-de-la-empresa-2?autoAdvance=true&autoSkip=false&autoplay=true&resume=true"
+            },
+            {
+                "nombre": "Ruta Analista de Datos. 12 micro Cursos",
+                "nivel": "Intermedio.",
+                "duracion": "1 Día, 5Horas.",
+                "habilidades": "Aprende a trabajar con grandes fuentes de datos. Categoriza, ordena y visualiza grandes volúmenes de información. Extrae conclusiones y aprende a tomar decisiones basadas en datos.",
+                "institucion": "Linkedin",
+                "costo": "Gratuito.",
+                "link": "https://www.linkedin.com/learning/paths/conviertete-en-data-analyst?trk=li-data-become-es&src=re-other&veh=www.smarttalent.uy"
+            },
+            {
+                "nombre": "Especialización en análitica de datos ",
+                "nivel": "Avanzado.",
+                "duracion": " 2 semestres, 24 créditos académicos y una periodicidad de admisión semestral.",
+                "habilidades": "Bases de Datos y Almacenamiento Masivo. Estadística Computacional. Fundamentos de Analítica de Datos. Visualización y toma de Decisiones. Aspectos éticos y seguridad de la información. Gestión de Proyectos de Analítica. Inteligencia de Negocios",
+                "institucion": "Politécnico Jaime Isaza Cadavid",
+                "costo": "Seis (6) salarios mínimos legal vigentes.",
+                "link": "https://www.politecnicojic.edu.co/especializaciones/3657-especializacion-en-analitica-de-datos"
+            }
+        ]
+    },    
+        {"id": "8",
+        "ruta": "Ciberseguridad",
+        "cursos": [
+            {
+                "nombre": "Introducción a Ciberseguridad",
+                "nivel": "Básico",
+                "duracion": "SD",
+                "habilidades": "Este curso explora las tendencias cibernéticas, las amenazas y cómo permanecer seguro en el ciberespacio a fin de proteger los datos personales y empresariales.",
+                "institucion": "MinTIC-Fortinet",
+                "costo": "Gratuito",
+                "link": "https://talentodigital.mintic.gov.co/734/w3-article-172241.html"
+            },
+            {
+                "nombre": "Pentesting en Seguridad Informática. Detecta, Defiende.",
+                "nivel": "Básico",
+                "duracion": "9 horas ",
+                "habilidades": "Realiza trabajos de Auditoria en Seguridad Informática en redes de empresas o privadas para encontrar vulnerabilidades.",
+                "institucion": "Udemy ",
+                "costo": "US 13, 99",
+                "link": "https://www.udemy.com/course/aprende-pentesting-practicando-de-principiante-a-experto/"
+            },
+            {
+                "nombre": "Introducción al Hacking y Ciberseguridad.",
+                "nivel": "Intermedio. ¿Debo tener conocimientos de programación? Si, conocimientos básicos de programación a través de algún lenguaje como Python, Java o C++.",
+                "duracion": "7 Horas",
+                "habilidades": "Aprende a protegerte de las técnicas que usan los cibercriminales para acceder a la información almacenada en una red.",
+                "institucion": "Udemy ",
+                "costo": "US 14,99 x persona.",
+                "link": "https://www.udemy.com/course/introduccion-al-hacking-y-ciberseguridad/"
+            },
+            {
+                "nombre": "Introducción a la ciberseguridad",
+                "nivel": "Intermedio.",
+                "duracion": "4 Semanas, 4 a 6 horas x semana.",
+                "habilidades": "Adquiere conocimientos demandados por la industria en varias de las áreas más importantes de la ciberseguridad: seguridad en el desarrollo de software, criptografía, hacking ético e informática forense.",
+                "institucion": "MOOC-EdX-U. del Rosario-Col.",
+                "costo": "MOOC-Gratuito. Con registro previo.",
+                "link": "https://www.edx.org/es/course/introduccion-a-la-ciberseguridad?index=spanish_product&queryID=c8a4fce928a2ef9455f9c492a3508906&position=3"
+            },
+            {
+                "nombre": "CURSO DE CRIPTOGRAFÍA Y BLOCKCHAIN",
+                "nivel": "Principiante. Tener conocimientos de seguridad informática.",
+                "duracion": "5 semanas, Frecuencia semana. 1 encuentro de 3 hs",
+                "habilidades": "Comprende hasta qué punto utilizamos día a día algoritmos criptográficos. Domina las técnicas de cifrado de datos y conviértete en un experto en Blockchain.",
+                "institucion": "Educación IT. *portal argentino",
+                "costo": "$274,800 (COP)",
+                "link": "https://www.educacionit.com/curso-de-criptografia"
+            },
+            {
+                "nombre": "Curso de Criptografia",
+                "nivel": "Intermedio. Tener conocimientos de seguridad informática",
+                "duracion": "24 Horas",
+                "habilidades": "La Seguridad Operativa de la información presenta 3 etapas, Prevención, Detección y Respuesta. ",
+                "institucion": "UPB Med.",
+                "costo": "Público general: $476.000",
+                "link": "https://www.upb.edu.co/es/formacion-continua"
+            },
+            {
+                "nombre": "Diplomado en Seguridad Informática",
+                "nivel": "Intermedio. Tener conocimientos de seguridad informática",
+                "duracion": "120 horas ",
+                "habilidades": "Conocer conceptos, técnicas y herramientas de seguridad infarmática, para Ia identificación de vulnerabilidades en los sistemas informáticas con el fin de implementar medidas que mitiguen los riesgos e impactos ante un evento de seguridad en una organización. ",
+                "institucion": "ITM",
+                "costo": "Público general: $1.410.747",
+                "link": "https://www.itm.edu.co/educacion-continua/diplomados/seguridad-informatica/"
+            }
+        ]
+    }
+]
