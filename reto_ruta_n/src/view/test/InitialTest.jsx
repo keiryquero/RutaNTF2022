@@ -1,4 +1,4 @@
-// Vista de la pregunta inicial, ¿Tienes conocimientos en programación?
+//Vista de la pregunta inicial, ¿Tienes conocimientos en programación?
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 const InitialTest = () => {
@@ -26,5 +26,4 @@ const InitialTest = () => {
         </section>
     );
 };
-
 export default InitialTest;
