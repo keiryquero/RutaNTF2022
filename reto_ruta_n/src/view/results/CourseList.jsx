@@ -1,9 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import {
-    List,
     ListItem,
-    ListIcon,
     UnorderedList,
 } from '@chakra-ui/react'
 
@@ -15,10 +13,10 @@ const CourseList = ({ routeData }) => {
                 <div key={course.nombre}>
 
                     <UnorderedList>
-                        <ListItem><button onClick={()=>console.log('hola')}>{course.nombre}
+                        <ListItem><button onClick={() => console.log('hola')}>{course.nombre}
                         </button></ListItem>
                     </UnorderedList>
-                    
+
                 </div>
             ))}
         </div>
