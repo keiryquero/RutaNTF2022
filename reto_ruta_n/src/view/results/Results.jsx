@@ -34,6 +34,7 @@ const Results = () => {
                         <AccordionButton>
                             <Box flex='1' textAlign='left'>
                                {route.ruta}
+                               {route.salario}
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
