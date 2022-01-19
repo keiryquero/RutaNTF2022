@@ -1,25 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Results from "../results/Results";
 
 const TestNoProgrammer = () => {
-  const arry1 = [
-    " Diseño visual de una página web",
-    "Manejo de datos desde una Base de Datos",
-    "Habilidad Analítica",
-    "Aprendizaje rápido",
-  ];
-  const arry2 = [
-    "Desarrollo de funcionalidades de una página web",
-    "Diseñar cómo el usuarix utiliza una web/app",
-    "Creatividad",
-    "Comunicación",
-  ];
-  const arry3 = [
-    "Manejo de datos desde una Base de Datos",
-    "Uso de la programación para cálculos matemáticos y estadísticos",
-    "Toma de decisiones basada en datos",
-    "Innovación",
-  ];
+  const navigate = useNavigate();
+ 
   const options = [
     {
       option: "Diseño visual de una página web",
@@ -114,7 +100,13 @@ const TestNoProgrammer = () => {
               <label> {currentOption2.option2}</label>
             </div>
           ))}
-          {console.log("arreglo",arrTemp)}
+        </div>
+        {console.log("arreglo", arrTemp)}
+        <div>
+          <button onClick={() => navigate("/Results")}>
+            <Results arrTemp={arrTemp} />
+            Ver ResultadO
+          </button>
         </div>
       </form>
     </>
