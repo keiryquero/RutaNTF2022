@@ -6,10 +6,9 @@ import Results from "../results/Results";
 import { Box, Button, Image, Flex, Heading, Text } from '@chakra-ui/react';
 import logoBlanco from '../../img/Logo-f-blanco-1.svg';
 
-
 const TestNoProgrammer = () => {
 
- /*  const navigate = useNavigate(); */
+  const navigate = useNavigate();
  
   const options = [
     {
@@ -134,6 +133,7 @@ const TestNoProgrammer = () => {
 
   return (
     <>
+    <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
     <Image src={logoBlanco} alt='logoMDT' margin='30px' w='13%' />
     <Box  w='100%'  color='blue'>
     {showCheckboxes ? (

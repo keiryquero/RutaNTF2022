@@ -34,7 +34,7 @@ const Login = () => {
         <>
             <Image src={logoBlanco} alt='logoMDT' margin='30px' />
             <Flex direction='column' alignItems='center' h='60vh' justifyContent='space-around'>
-                <Box color='#00014e' w='90%' h='250px' borderWidth='1px' borderRadius='lg' p={4} color='white' >
+                <Box bg='#00028A' w='90%' h='250px' borderWidth='1px' borderRadius='lg' p={4} color='white' >
                     <Heading as='h3' size='md' marginTop='15px'>
                         ¡Mide que tan crack eres!
                     </Heading>
