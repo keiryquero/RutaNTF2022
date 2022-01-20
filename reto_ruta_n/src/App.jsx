@@ -13,7 +13,7 @@ import theme from './theme';
 
 const App = () => {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} >
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login />} />
