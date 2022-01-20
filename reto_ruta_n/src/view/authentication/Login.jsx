@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 /* import { registerGoogle } from '../../firebase/firebase.js'; */
-import { Box, Button, Image } from '@chakra-ui/react';
+import { Box, Button, Image, Flex, Heading, Text } from '@chakra-ui/react';
 import { userRegister } from '../../firebase/firebase';
 import { FcGoogle } from 'react-icons/fc';
+import { ImGoogle2 } from "react-icons/im";
+
 import logoBlanco from '../../img/Logo-f-blanco-1.svg';
 import {
     GoogleAuthProvider,
@@ -29,14 +31,28 @@ const Login = () => {
     };
 
     return (
-        <Box>
-            <Image src={logoBlanco} alt='logoMDT' />
-            <Button leftIcon={<FcGoogle />} colorScheme='teal' size='lg' onClick={() => registerGoogle()}>
-                Ingresa con Google
-            </Button>
+        <>
+            <Image src={logoBlanco} alt='logoMDT' margin='30px' />
+            <Flex direction='column' alignItems='center' h='60vh' justifyContent='space-around'>
+                <Box bg='#00028A' w='90%' h='250px' borderWidth='1px' borderRadius='lg' p={4} color='white' >
+                    <Heading as='h3' size='md' marginTop='15px'>
+                        ¡Mide que tan crack eres!
+                    </Heading>
+                    <Text fontSize='18px' marginTop='20px'>
+                        Con nuestro test de habilidades descubre cuales son las rutas de formación IT más adecuadas para ti.
+                    </Text>
+                </Box>
+                <Box>
+                    <Heading as='h3' color='#333333' size='md'>
+                        Ingresa y realiza tu test
+                    </Heading>
+                </Box>
+                <Button leftIcon={<ImGoogle2 />} colorScheme='teal' bg='#FF600E' fontSize='16px' size='lg' onClick={() => registerGoogle()}>
+                    Ingresa con Google
+                </Button>
 
 
-            {/*  <div className='containerLogin'>
+                {/*  <div className='containerLogin'>
                 <button
                     type='button'
                     className='btn.login'
@@ -49,7 +65,8 @@ const Login = () => {
             </div>
             )
 } */}
-        </Box>
+            </Flex>
+        </>
     );
 };
 export default Login;
