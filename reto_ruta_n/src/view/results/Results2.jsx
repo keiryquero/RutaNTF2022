@@ -7,7 +7,6 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Box,
   Flex,
   Button,
   Heading
@@ -16,11 +15,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Results2 = (porcRoutes) => {
   const navigate = useNavigate();
-
-  console.log('porcentajes', porcRoutes)
-
   const [data, setDataState] = useState([]);
-  //console.log(data);
+
   const getData = () => {
     fetch("data.json")
       .then((products) => products.json())
@@ -30,6 +26,35 @@ const Results2 = (porcRoutes) => {
   useEffect(() => {
     getData();
   }, []);
+
+  /* const sortResults = () => {
+    const newArray = Object.entries(porcRoutes);
+    const resultsArray = newArray.map((element) => ({
+      routeName: element[0],
+      value: element[1]
+    }));
+    console.log(...resultsArray, 'mapeo');
+    const tempArray = [...resultsArray.value].sort(function (a, b) {
+
+      if (a.value > b.value) {
+        console.log(tempArray, 'arreglo');
+        return 1;
+      }
+      if (a.value < b.value) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+    // console.log({ resultsArray });
+
+    const sortedArray = tempArray.map(
+      (object, i) =>
+        data.filter((element) => element.data.ruta === object.routeName)[0]
+    );
+    console.log(sortedArray, 'arreglo ordenado');
+    return sortedArray;
+  } */
 
 
   return (
@@ -44,6 +69,7 @@ const Results2 = (porcRoutes) => {
         </Flex>
         {data.map((route) => (
           <div key={route.id}>
+            {console.log(route, 'soy route')}
             <Flex color='white' marginTop='15px' justifyContent='center' w='85%' >
               <h3>Afinidad con esta ruta: {porcRoutes.objRoutes[route.ruta]} %</h3>
             </Flex>

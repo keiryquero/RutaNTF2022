@@ -15,11 +15,11 @@ import {
 } from "@chakra-ui/react";
 
 const Results = ({ path }) => {
-    console.log('path', path)
+    
     const navigate = useNavigate();
 
     const [data, setDataState] = useState([]);
-    //console.log(data);
+    
     const getData = () => {
         fetch("data.json")
             .then((products) => products.json())

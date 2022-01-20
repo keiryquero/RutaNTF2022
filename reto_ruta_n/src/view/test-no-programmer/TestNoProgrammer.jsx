@@ -1,15 +1,14 @@
-import { Container, useAccordionDescendantsContext } from '@chakra-ui/react';
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Results from "../results/Results";
-import { Box, Button, Image, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Image, Text, Container } from '@chakra-ui/react';
 import logoBlanco from '../../img/Logo-f-blanco-1.svg';
 
 const TestNoProgrammer = () => {
 
   const navigate = useNavigate();
- 
+
   const options = [
     {
       option: "Diseño visual de una página web",
@@ -49,30 +48,35 @@ const TestNoProgrammer = () => {
   ];
 
   const [arrTemp, setArrTemp] = useState([]);
-  const [cont1, setCont1] = useState(1);
-  const [cont2, setCont2] = useState(1);
   const [disabled, setDisabled] = useState(false);
   const [disabled2, setDisabled2] = useState(false);
   const [showCheckboxes, setShowCheckboxes] = useState(true)
 
   const addItemHandler = (e) => {
-    setArrTemp([...arrTemp, e.target.value]);
-    setCont1(cont1 + 1);
-    console.log("estoy aqui", cont1);
-    cont1 === 2 ? setDisabled(true) : setDisabled(false);
+    if (arrTemp.includes(e.target.value)) {
+      let indexFound = arrTemp.indexOf(e.target.value);
+      arrTemp.splice(indexFound, 1);
+      setArrTemp(arrTemp);
+    } else {
+      setArrTemp([...arrTemp, e.target.value]);
+    }
+
+    arrTemp.length === 1 ? setDisabled(true) : setDisabled(false);
   };
 
   const addItemHandler2 = (e) => {
-    setArrTemp([...arrTemp, e.target.value]);
-    setCont2(cont2 + 1);
-    console.log("estoy aqui2", cont2);
-    cont2 === 3 ? setDisabled2(true) : setDisabled2(false);
-  };
-  
-  const [path, setPath] = useState([]);
- 
+    if (arrTemp.includes(e.target.value)) {
+      let indexFound = arrTemp.indexOf(e.target.value);
+      arrTemp.splice(indexFound, 1);
+      setArrTemp(arrTemp);
+    } else {
+      setArrTemp([...arrTemp, e.target.value]);
+    }
 
-  console.log("pagina resultados", arrTemp[0]);
+    arrTemp.length === 4 ? setDisabled2(true) : setDisabled2(false);
+  };
+
+  const [path, setPath] = useState([]);
 
   function match1() {
     const arry1 = [
@@ -112,80 +116,71 @@ const TestNoProgrammer = () => {
 
     if (contMatch1 > contMatch2 && contMatch1 > contMatch3) {
       setPath(...path, ["Desarrollo Web", "Programación básica"]);
-      console.log("Programación básica", "Desarrollo Web");
     } else if (contMatch2 > contMatch1 && contMatch2 > contMatch3) {
-      setPath(...path,["FrontEnd","Programación básica"]);
-      console.log("Programación básica", "FrontEnd");
+      setPath(...path, ["FrontEnd", "Programación básica"]);
     } else if (contMatch3 > contMatch2 && contMatch3 > contMatch1) {
-      setPath(...path,["Python", "Programación básica"]);
-      console.log("Programación básica", "Python");
+      setPath(...path, ["Python", "Programación básica"]);
     } else {
-      console.log("Programación básica");
     }
-    console.log(
-      "Desarrollo Web: ", contMatch1,
-      "Frontend: ", contMatch2,
-      "Python :", contMatch3
-    );
-   
+
     return contMatch1, contMatch2, contMatch3;
   }
 
   return (
     <>
-    <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
-    <Image src={logoBlanco} alt='logoMDT' margin='30px' w='13%' />
-    <Box  w='100%'  color='blue'>
-    {showCheckboxes ? (
-    <form action="submit">
-    <Text fontSize='3xl' textAlign={'center'} >Test</Text> 
-    <Container p={2}>
-    <Text fontWeight='bold'>¿En cuáles de las siguientes áreas te gustaría desarrollarte como
-   programador? (Por favor escoge 2)</Text>
-  
- <div>
-   {options.map((currentOption) => (
-     <div key={currentOption}>
-       <input
-         type="checkbox"
-         value={currentOption.option}
-         disabled={disabled}
-         onClick={addItemHandler}
-       />
-       <label> {currentOption.option}</label>
-     </div>
-   ))}
- </div>
- </Container>
- <Container p={2}>
- <Text fontWeight='bold' >¿Con cuáles de estas habilidades blandas te identificas más?(Por favor escoge 3)</Text> 
-  <div>
-   {options2.map((currentOption2) => (
-     <div key={currentOption2}>
-       <input
-         type="checkbox"
-         value={currentOption2.option2}
-         disabled={disabled2}
-         onClick={addItemHandler2}
-       />
-       <label> {currentOption2.option2}</label>
-     </div>
-   ))}
- </div>
- {console.log("arreglo", arrTemp)}
- </Container>
- <div> 
- <Box display='flex' justifyContent='center'>
-   <Button bg='#1f21b7'fontSize='16px' size='lg' color='white' mt={'5px'} mb={'10px'}  onClick={() => 
-   {setShowCheckboxes(false);
-   match1()}}>
-     Ver Resultado
-   </Button>
-   </Box>
- </div>
-</form>
-    ): (<Results path={path}/>)}
-       </Box>
+      <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
+      <Image src={logoBlanco} alt='logoMDT' margin='30px' w='13%' />
+      <Box w='100%' color='blue'>
+        {showCheckboxes ? (
+          <form action="submit">
+            <Text fontSize='3xl' textAlign={'center'} >Test</Text>
+            <Container p={2}>
+              <Text fontWeight='bold'>¿En cuáles de las siguientes áreas te gustaría desarrollarte como
+                programador? (Por favor escoge 2)</Text>
+
+              <div>
+                {options.map((currentOption) => (
+                  <div key={currentOption}>
+                    <input
+                      type="checkbox"
+                      value={currentOption.option}
+                      disabled={disabled}
+                      onClick={addItemHandler}
+                    />
+                    <label> {currentOption.option}</label>
+                  </div>
+                ))}
+              </div>
+            </Container>
+            <Container p={2}>
+              <Text fontWeight='bold' >¿Con cuáles de estas habilidades blandas te identificas más?(Por favor escoge 3)</Text>
+              <div>
+                {options2.map((currentOption2) => (
+                  <div key={currentOption2}>
+                    <input
+                      type="checkbox"
+                      value={currentOption2.option2}
+                      disabled={disabled2}
+                      onClick={addItemHandler2}
+                    />
+                    <label> {currentOption2.option2}</label>
+                  </div>
+                ))}
+              </div>
+            </Container>
+            <div>
+              <Box display='flex' justifyContent='center'>
+                <Button bg='#1f21b7' fontSize='16px' size='lg' color='white' mt={'5px'} mb={'10px'} onClick={() => {
+                  setShowCheckboxes(false);
+                  match1()
+                }}>
+                  Ver Resultado
+                </Button>
+              </Box>
+            </div>
+          </form>
+        ) : (<Results path={path} />)}
+      </Box>
     </>
   );
 };

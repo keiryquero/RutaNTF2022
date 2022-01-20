@@ -129,24 +129,31 @@ const TestProgrammer = () => {
   ];
 
   const [arrTemp1, setArrTemp1] = useState([]);
-  const [cont1, setCont1] = useState(1);
-  const [cont2, setCont2] = useState(1);
   const [disabled, setDisabled] = useState(false);
   const [disabled2, setDisabled2] = useState(false);
-  const [showResult2, setShowResult2] = useState(true)
-  const [porcRoutes, setPorcRoutes] = useState('')
+  const [showResult2, setShowResult2] = useState(true);
+  const [porcRoutes, setPorcRoutes] = useState('');
 
   const addItemHandler = (e) => {
-    setArrTemp1([...arrTemp1, e.target.value]);
-    setCont1(cont1 + 1);
-    console.log("estoy aqui", cont1);
-    cont1 === 8 ? setDisabled(true) : setDisabled(false);
+    if (arrTemp1.includes(e.target.value)) {
+      let indexFound = arrTemp1.indexOf(e.target.value);
+      arrTemp1.splice(indexFound, 1);
+      setArrTemp1(arrTemp1);
+    } else {
+      setArrTemp1([...arrTemp1, e.target.value]);
+    }
+    arrTemp1.length === 7 ? setDisabled(true) : setDisabled(false);
   };
+
   const addItemHandler2 = (e) => {
-    setArrTemp1([...arrTemp1, e.target.value]);
-    setCont2(cont2 + 1);
-    console.log("estoy aqui2", cont2);
-    cont2 === 3 ? setDisabled2(true) : setDisabled2(false);
+    if (arrTemp1.includes(e.target.value)) {
+      let indexFound = arrTemp1.indexOf(e.target.value);
+      arrTemp1.splice(indexFound, 1);
+      setArrTemp1(arrTemp1);
+    } else {
+      setArrTemp1([...arrTemp1, e.target.value]);
+    }
+    arrTemp1.length === 10 ? setDisabled2(true) : setDisabled2(false);
   };
 
   const match2 = () => {
@@ -293,19 +300,19 @@ const TestProgrammer = () => {
 
   return (
     <>
-    <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
+      <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
 
       <Image src={logoBlanco} alt='logoMDT' margin='20px' w='15%' />
       {showResult2 ? (
         <Box color='#00014e' fontWeight={400} ml='20px' mr='8px'>
           <form >
-          <Text fontSize='3xl' textAlign={'center'} >Test</Text>
+            <Text fontSize='3xl' textAlign={'center'} >Test</Text>
 
             <Container p={2}>
-            <Text fontWeight='bold'>
-              De las siguientes habilidades marca aquellas que deseas aprender(Por
-              favor escoger 8)
-            </Text>
+              <Text fontWeight='bold'>
+                De las siguientes habilidades marca aquellas que deseas aprender(Por
+                favor escoger 8)
+              </Text>
               {testProg1.map((currentOption1) => (
                 <div key={currentOption1}>
                   <input
@@ -319,10 +326,10 @@ const TestProgrammer = () => {
               ))}
             </Container>
             <Container p={2}>
-            <Text fontWeight='bold' >
-              ¿Con cuáles de estas habilidades blandas te identificas más? (Por
-              favor escoger 3)
-            </Text>
+              <Text fontWeight='bold' >
+                ¿Con cuáles de estas habilidades blandas te identificas más? (Por
+                favor escoger 3)
+              </Text>
               {testProg2.map((currentOption2) => (
                 <div key={currentOption2}>
                   <input
@@ -335,13 +342,13 @@ const TestProgrammer = () => {
                 </div>
               ))}
             </Container>
-              <Box display='flex' justifyContent='center' mt='10px' mb='15px'>
-                <Button bg='#1f21b7' fontSize='16px' size='lg' color='white' alignItems='center'
-                  onClick={() => {
-                    setShowResult2(false);
-                    match2()
-                  }}>Ver Resultados</Button>
-              </Box>
+            <Box display='flex' justifyContent='center' mt='10px' mb='15px'>
+              <Button bg='#1f21b7' fontSize='16px' size='lg' color='white' alignItems='center'
+                onClick={() => {
+                  setShowResult2(false);
+                  match2()
+                }}>Ver Resultados</Button>
+            </Box>
           </form>
         </Box>
       ) : (<Results2 objRoutes={porcRoutes} />)}
