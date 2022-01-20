@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Results from "../results/Results";
-import { Box, Button, Image, Text, Container } from '@chakra-ui/react';
+import { Box, Button, Image, Text, Container, Flex } from '@chakra-ui/react';
 import logoBlanco from '../../img/Logo-f-blanco-1.svg';
 
 const TestNoProgrammer = () => {
@@ -128,7 +128,9 @@ const TestNoProgrammer = () => {
 
   return (
     <>
-      <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
+      <Flex justifyContent='end' mt='10px' mr='10px' >
+        <Button justifyContent='center' w='25%' h='20px' fontSize='14px' boxShadow='lg' p='3' rounded='lg' borderWidth='1px' borderColor='#00028A' size='md' onClick={() => navigate('/Home')}> Regresar </Button>
+      </Flex>
       <Image src={logoBlanco} alt='logoMDT' margin='30px' w='13%' />
       <Box w='100%' color='blue'>
         {showCheckboxes ? (

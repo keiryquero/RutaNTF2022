@@ -37,7 +37,7 @@ const Results = ({ path }) => {
             <Flex bg='#00028A' direction='column' h='100vh' justifyContent='space-evenly'>
                 <Flex justifyContent='center'>
 
-                    <Heading as='h3' size='lg' margin='20px' color='white'>
+                    <Heading as='h3' size='lg'  color='white'>
 
                         Estos son tus resultados
                     </Heading >
@@ -64,9 +64,6 @@ const Results = ({ path }) => {
                         </Flex>
                     </div>
                 ))}
-                <Flex justifyContent='center' w='100%'>
-                    <Button rounded='lg' marginTop='50px' marginBottom='20px' w='70%' onClick={() => navigate('/Home')}>REGRESAR</Button>
-                </Flex>
             </Flex>
         </div>
     );

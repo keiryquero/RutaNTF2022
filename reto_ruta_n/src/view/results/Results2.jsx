@@ -95,9 +95,6 @@ const Results2 = (porcRoutes) => {
             </Flex>
           </div>
         ))}
-        <Flex justifyContent='center' w='100%'>
-          <Button rounded='lg' marginTop='50px' marginBottom='20px' w='70%' onClick={() => navigate('/Home')}>REGRESAR</Button>
-        </Flex>
       </Flex>
     </div>
 
