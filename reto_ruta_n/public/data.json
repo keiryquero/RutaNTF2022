@@ -25,7 +25,7 @@
 
           },
           {
-            "nombre":"Fundamentos de Programación - Aprende a programar desde cero",
+            "nombre":"Fundamentos de Programación",
             "nivel": "Básico",
             "duracion": "29 horas",
             "habilidades":"Adquiera las técnicas y metodologías básicas de programación para luego poder migrar hacia los mejores lenguajes.",
@@ -45,7 +45,7 @@
 
           },
           {
-            "nombre":"Introducción a la Programación MInTIC_Programa Conecta Empleo Fundación Telefónica",
+            "nombre":"Introducción a la Programación",
             "nivel": "Básico",
             "duracion": "30 horas",
             "habilidades":"Descubre que tu idea puede llegar a convertirse en una aplicación, un programa,un software,en definitiva, para Mayores de 18 años, Residentes en  Colombia",
@@ -116,7 +116,7 @@
     "salario": "$3.000.000",
     "cursos": [
         {
-            "nombre": "Curso de Introducción al Desarrollo Backend",
+            "nombre": "Introducción Desarrollo Backend",
             "nivel": "Básico",
             "duración": "9 horas",
             "habilidades": "Fundamentos del desarrollo web, diseño de una API. Lenguaje y framework a escoger para backend",
@@ -125,7 +125,7 @@
             "link": "https://platzi.com/cursos/introduccion-backend/"
         },
         {
-            "nombre": "Desarrollo Web Backend con orientación JavaScript",
+            "nombre": "Web Backend JavaScript",
             "nivel": "Básico a Intermedio",
             "duración": "9 meses",
             "habilidades": "Habilidades técnicas de desarrollo web Back-end",
@@ -141,7 +141,7 @@
     "salario": "$7.500.000",
     "cursos": [
         {
-            "nombre": "Desarrollador web full-stack 8 Cursos Linkedin learning",
+            "nombre": "Desarrollador web full-stack",
             "nivel": "Básico",
             "duración": "20 horas",
             "habilidades": "Fundamentos del desarrollo web: Full Stack, JavaScript esencial, JavaScript avanzado, MySQL esencial, GitHub, desarrollo web, SCRUM metodología agíl",
@@ -150,7 +150,7 @@
             "link": "https://opportunity.linkedin.com/es-es/skills-for-in-demand-jobs/software-developer?trk=li-jobsindemand-softwaredev-es"
         },
         {
-            "nombre": "Introducción JavaScript Make it real",
+            "nombre": "Introducción JavaScript",
             "nivel": "Básico",
             "duración": "2 semanas",
             "habilidades": "Este curso te permitirá desarrollar las habilidades básicas para iniciar el programa Desarrollo Web Full Stack. Como Primeros pasos con JavaScript, condicionales, ciclos, arreglos, strings, funciones, objetos, programación funcional, ES6",
@@ -186,7 +186,7 @@
             "link": "https://ime.edu.co/"
         },
         {
-            "nombre": "Desarrollador full-stack junior Bootcamp",
+            "nombre": "Bootcamp FullStack Jr",
             "nivel": "Básico",
             "duración": "5 meses, 20 semanas",
             "habilidades": "Front-end: HTML semántico, CSS, JavaScript, React/Angular, Consumo REST, SEO. Back-end: Bases de datos y REST. Transversales: Git, Buenas prácticas, patrones de diseño, código limpio, arquitectura (básico), pruebas unitarias. Introducción a integración continua, tips de seguridad, SOLID y protocolo HTTP.",
@@ -204,7 +204,7 @@
             "link": "https://sapiencia.gov.co/talento-especializado/"
         },
         {
-            "nombre": "Desarrollo Web Full Stack (Backend) SQL y MONGO, NODE JS y Express, Dockers, Ciberseguridad",
+            "nombre": "Full Stack (Backend)",
             "nivel": "Nivel_3 Se requieren conocimientos previos en JavaScript, HTML5, CSS3, fundamentos y metodologías de programación.",
             "duración": "320 horas de estudio: 160 horas sincrónicas a través de videoconferencias en sesiones del formador y los beneficiarios conectados en tiempo real. 160 horas de actividades asincrónicas alojadas en nuestro Sistema de Gestión de Aprendizaje -LMS-.",
             "habilidades": "Estructuras de datos, Bases de Datos, SQL,MySQL, Oracle, SQL,MySQL, Oracle, POO, Node JS / npm /Express, Node JS / npm /Express, Express + Handlebars, Node JS /Creación API REST. 10. Node JS / SPA con JS, Web Sockets, MongoDB, Node Js/ Mongoose, ORM, PHP, Laravel, Laravel, Testing Unit, Testing Unit, Docker, Docker, Serveless y AWS, Serveless y AWS, Ciberseguridad y Buenas Prácticas, Refactoring de Proyectos",
@@ -220,7 +220,7 @@
         "salario": "$5.700.000",
         "cursos":[
             {
-                "nombre":"Aprende a programar con Python-RUTA COURSERA",
+                "nombre":"Python-RUTA COURSERA",
                 "nivel": "Básico",
                 "duracion": "15 horas",
                 "habilidades":"Comprender los conceptos básicos de programación,entender cómo la computadora interpreta el código,Crear tus propios scripts en Python y ejecutarlos (tanto los propios como los de otras personas), leer e interpretar código básico escrito en Python",
@@ -230,7 +230,7 @@
     
               },
               {
-                "nombre":"Curso_1_Introducción a la programación con Python",
+                "nombre":"Introducción a Python",
                 "nivel": "Básico",
                 "duracion": "17 horas",
                 "habilidades":"Comprender los conceptos básicos de programación,entender cómo la computadora interpreta el código,Crear tus propios scripts en Python y ejecutarlos (tanto los propios como los de otras personas), leer e interpretar código básico escrito en Python",
@@ -240,7 +240,7 @@
     
               },
               {
-                "nombre":"Curso_2_Estructuras de datos en Python",
+                "nombre":"Datos en Python",
                 "nivel": "Básico",
                 "duracion": "15 horas",
                 "habilidades":"Utilizar strings,Comprender las diferentes estructuras de datos que provee Python,Comprender cómo se trabaja con archivos,comprender qué son las excepciones y el uso de los decoradores",
@@ -250,7 +250,7 @@
     
               },
               {
-                "nombre":"Curso_3_Programación Orientada a Objetos con Python",
+                "nombre":"POO con Python",
                 "nivel": "Básico",
                 "duracion": "9 horas",
                 "habilidades":"Comprender qué es un programa orientado a objetos y los conceptos del paradigma asociado, para diseñar sistemas siguiendo las buenas prácticas,Realizar diagramas de objetos, de clases y de secuencia,Realizar pruebas unitarias automáticas del sistema,Realizar refactorizaciones de código y utilizar la técnica de programación Test Driven Development (TDD)",
@@ -260,7 +260,7 @@
     
               },
               {
-                "nombre":"Curso_4_Manejo de bases de datos con Python",
+                "nombre":"Bases de datos Python",
                 "nivel": "Básico",
                 "duracion": "16 horas",
                 "habilidades":"Comprender qué son y cómo funcionan las bases de datos relacionales,Crear sus propias bases de datos relacionales en SQLite,Construir sistemas orientados a objetos que persistan sus datos en una base de datos relacional utilizando el mapeo objeto relacional de SQLAlchemy,Escribir consultas SQL,Comprender que es el Mapeo Objeto",
@@ -270,7 +270,7 @@
     
               },
               {
-                "nombre":"Curso de Python desde 0,Unipython",
+                "nombre":"Python desde 0",
                 "nivel": "Intermedio",
                 "duracion": "30 horas",
                 "habilidades":"Este curso te permitirá continuar tu formación de Python en sectores punteros como Visión Artificial, Data Scientist, Testeo de Aplicaciones, desarrollo Blockchain, Videojuegos, Machine Learning, Desarrollo Web etc. Ramas profesionales vanguardistas que las empresas tecnológicas solicitan cada día con ganancias más elevadas que en otras profesiones",
@@ -280,7 +280,7 @@
     
               },
               {
-                "nombre":"Curso NodeJS, ExpressJS,MongoDB y Unipyton",
+                "nombre":"NodeJS, ExpressJS, MongoDB",
                 "nivel": "Intermedio",
                 "duracion": "24 horas",
                 "habilidades":"Con este curso podrás,Instalar Node, Express y Mongo,",
@@ -297,7 +297,7 @@
          "salario": "$2.000.000",
          "cursos": [
              {
-                 "nombre": "Desarrollo Web con HMTL, CSS y Bootstrap 4! Curso desde cero",
+                 "nombre": "Desarrollo Web",
                  "nivel": "Básico",
                  "duración": "2.43 horas",
                  "habilidades": "Curso de HTML, CSS y Bootstrap 4 para principiantes, comienza a crear tus propios diseños web sin conocimientos previos!",
@@ -306,7 +306,7 @@
                  "link": "https://www.udemy.com/course/curso-html5-css3/"
              },
              {
-                 "nombre": "HTML/JS: hacer páginas web interactivas con jQuery",
+                 "nombre": "HTML/JS: jQuery",
                  "nivel": "Básico",
                  "duración": "Curso abierto",
                  "habilidades": "Conoce al inventor y trata de usar jQuery en una página web.",
@@ -324,7 +324,7 @@
                  "link": "https://unipython.com/"
              },
              {
-                 "nombre": "Curso de Programación Orientada a Objetos en Python",
+                 "nombre": "POO con Python",
                  "nivel": "Principiante, conocimientos básicos en Python",
                  "duración": "30 horas",
                  "habilidades": "En este curso te mostraremos las ventajas de este paradigma de programación y como llevar la teoría de la programación orientada a objetos a código de python.",
@@ -335,7 +335,7 @@
          ]
      } ,
      {"id": "7",
-        "ruta": "Análitica de datos",
+        "ruta": "Análisis de datos",
         "salario": "$4.000.000",
         "cursos": [
             {
@@ -348,7 +348,7 @@
                 "link": "https://es.khanacademy.org/computing/ap-computer-science-principles/data-analysis-101"
             },
             {
-                "nombre": "Minería de Datos: Segmentación de Mercados",
+                "nombre": "Minería de Datos",
                 "nivel": "Introductorio",
                 "duracion": "5 semanas estimadas 4–5 horas por semana",
                 "habilidades": "Comprenderás los conceptos relacionados con big data y minería de datos. Comprenderás los conceptos de la técnica segmentación de clientes K-means. Aplicarás el software RapidMiner para generar modelos de minería de datos.",
@@ -357,7 +357,7 @@
                 "link": "https://www.edx.org/es/course/mineria-de-datos-segmentacion-de-mercados"
             },
             {
-                "nombre": "Certificación en Data Mining / Mineria de Datos I-Data",
+                "nombre": "Mineria de Datos I-Data",
                 "nivel": "Intermedio. CONOCIMIENTOS PREVIOS: Es preciso que cada estudiante tenga un nivel básico de programación y estadística",
                 "duracion": "Por determinar tiempo de duración. 20 horas de laboratorio ",
                 "habilidades": "Estadística básica (análisis descriptivo), Medidas de tendencia central y de dispersión, Correlación. Gráficos y tablas resumen.,Modelos Lineales y no lineales, Estadística Multivariante, Algoritmos de Machine Learning (Aprendizaje automático) Métricas de evaluación de modelos.",
@@ -366,7 +366,7 @@
                 "link": "http://idata.academy/data-mining/"
             },
             {
-                "nombre": "Curso de Introducción a la Analítica de Datos",
+                "nombre": "Introducción Analítica de Datos",
                 "nivel": "Intermedio.",
                 "duracion": "20 Horas",
                 "habilidades": "Analítica de datos en el mundo real. Obtención y limpieza de datos. Análisis exploratorio. Estadística Inferencial. Comunicación de resultados",
@@ -393,7 +393,7 @@
                 "link": "https://www.linkedin.com/learning/aprende-analisis-de-datos/el-analisis-de-datos-en-el-mundo-de-la-empresa-2?autoAdvance=true&autoSkip=false&autoplay=true&resume=true"
             },
             {
-                "nombre": "Ruta Analista de Datos. 12 micro Cursos",
+                "nombre": "Analista de Datos",
                 "nivel": "Intermedio.",
                 "duracion": "1 Día, 5Horas.",
                 "habilidades": "Aprende a trabajar con grandes fuentes de datos. Categoriza, ordena y visualiza grandes volúmenes de información. Extrae conclusiones y aprende a tomar decisiones basadas en datos.",
@@ -402,7 +402,7 @@
                 "link": "https://www.linkedin.com/learning/paths/conviertete-en-data-analyst?trk=li-data-become-es&src=re-other&veh=www.smarttalent.uy"
             },
             {
-                "nombre": "Especialización en análitica de datos ",
+                "nombre": "Esp. análitica de datos ",
                 "nivel": "Avanzado.",
                 "duracion": " 2 semestres, 24 créditos académicos y una periodicidad de admisión semestral.",
                 "habilidades": "Bases de Datos y Almacenamiento Masivo. Estadística Computacional. Fundamentos de Analítica de Datos. Visualización y toma de Decisiones. Aspectos éticos y seguridad de la información. Gestión de Proyectos de Analítica. Inteligencia de Negocios",
@@ -417,7 +417,7 @@
         "salario": "$10.000.000",
         "cursos": [
             {
-                "nombre": "Introducción a Ciberseguridad",
+                "nombre": "Introd. Ciberseguridad",
                 "nivel": "Básico",
                 "duracion": "SD",
                 "habilidades": "Este curso explora las tendencias cibernéticas, las amenazas y cómo permanecer seguro en el ciberespacio a fin de proteger los datos personales y empresariales.",
@@ -426,7 +426,7 @@
                 "link": "https://talentodigital.mintic.gov.co/734/w3-article-172241.html"
             },
             {
-                "nombre": "Pentesting en Seguridad Informática. Detecta, Defiende.",
+                "nombre": "Pentesting",
                 "nivel": "Básico",
                 "duracion": "9 horas ",
                 "habilidades": "Realiza trabajos de Auditoria en Seguridad Informática en redes de empresas o privadas para encontrar vulnerabilidades.",
@@ -435,7 +435,7 @@
                 "link": "https://www.udemy.com/course/aprende-pentesting-practicando-de-principiante-a-experto/"
             },
             {
-                "nombre": "Introducción al Hacking y Ciberseguridad.",
+                "nombre": "Hacking y Ciberseguridad.",
                 "nivel": "Intermedio. ¿Debo tener conocimientos de programación? Si, conocimientos básicos de programación a través de algún lenguaje como Python, Java o C++.",
                 "duracion": "7 Horas",
                 "habilidades": "Aprende a protegerte de las técnicas que usan los cibercriminales para acceder a la información almacenada en una red.",
@@ -444,7 +444,7 @@
                 "link": "https://www.udemy.com/course/introduccion-al-hacking-y-ciberseguridad/"
             },
             {
-                "nombre": "Introducción a la ciberseguridad",
+                "nombre": "Ciberseguridad",
                 "nivel": "Intermedio.",
                 "duracion": "4 Semanas, 4 a 6 horas x semana.",
                 "habilidades": "Adquiere conocimientos demandados por la industria en varias de las áreas más importantes de la ciberseguridad: seguridad en el desarrollo de software, criptografía, hacking ético e informática forense.",
@@ -453,7 +453,7 @@
                 "link": "https://www.edx.org/es/course/introduccion-a-la-ciberseguridad?index=spanish_product&queryID=c8a4fce928a2ef9455f9c492a3508906&position=3"
             },
             {
-                "nombre": "CURSO DE CRIPTOGRAFÍA Y BLOCKCHAIN",
+                "nombre": "Criptografía y blockchain",
                 "nivel": "Principiante. Tener conocimientos de seguridad informática.",
                 "duracion": "5 semanas, Frecuencia semana. 1 encuentro de 3 hs",
                 "habilidades": "Comprende hasta qué punto utilizamos día a día algoritmos criptográficos. Domina las técnicas de cifrado de datos y conviértete en un experto en Blockchain.",
@@ -471,7 +471,7 @@
                 "link": "https://www.upb.edu.co/es/formacion-continua"
             },
             {
-                "nombre": "Diplomado en Seguridad Informática",
+                "nombre": "Diplomado Seguridad Informát.",
                 "nivel": "Intermedio. Tener conocimientos de seguridad informática",
                 "duracion": "120 horas ",
                 "habilidades": "Conocer conceptos, técnicas y herramientas de seguridad infarmática, para Ia identificación de vulnerabilidades en los sistemas informáticas con el fin de implementar medidas que mitiguen los riesgos e impactos ante un evento de seguridad en una organización. ",

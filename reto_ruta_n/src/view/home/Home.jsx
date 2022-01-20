@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button, Flex, Box, Image, Heading, Text } from '@chakra-ui/react';
+import { Button, Flex, Box, Heading, Text } from '@chakra-ui/react';
 const Home = () => {
     const navigate = useNavigate();
     return (
@@ -19,8 +19,8 @@ const Home = () => {
                     </Flex>
                 </Box>
                 <Flex direction='column' h='150px' justifyContent='space-around'>
-                    <Button bg='#FFDF37' fontSize='18px' size='lg' color='#7C5E10' onClick={() => navigate('/InitialTest')}>Realizar test</Button>
-                    <Button fontSize='16px' size='lg' onClick={() => navigate('/')} >Resultados test anteriores</Button>
+                    <Button as='h1' bg='#FFDF37' fontSize='18px' size='lg' color='#735300' onClick={() => navigate('/InitialTest')}>Realizar test</Button>
+                    {/* <Button fontSize='16px' size='lg' onClick={() => navigate('/')} >Resultados test anteriores</Button> */}
                 </Flex>
             </Flex>
         </>

@@ -5,7 +5,7 @@ import {
     ListItem,
     UnorderedList,
     useDisclosure,
-    Button
+    Button, Box
 } from '@chakra-ui/react'
 
 const CourseList = ({ routeData }) => {
@@ -18,8 +18,8 @@ const CourseList = ({ routeData }) => {
             {routeData.cursos.map((course) => (
                 /* variable = course.nombre; */
                 <div key={course.nombre}>
-                    <UnorderedList>
-                        <ListItem><Button value={course.nombre} onClick={(e) => { setContentModal(e.target.value); onOpen() }}>{course.nombre}
+                    <UnorderedList >
+                        <ListItem ><Button bg='#E5E5E5' value={course.nombre} onClick={(e) => { setContentModal(e.target.value); onOpen() }}>{course.nombre}
                             <CourseModal isOpen={isOpen} onClose={onClose} course={course} contentModal={contentModal} />
                         </Button></ListItem>
                     </UnorderedList>
