@@ -1,10 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Results2 from '../results/Results2';
+import logoBlanco from '../../img/Logo-f-blanco-1.svg';
+import { Image, Box, Text, Button, Container } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
+
 
 const TestProgrammer = () => {
   const navigate = useNavigate();
+
   const testProg1 = [
     {
       option1: "jQuery",
@@ -185,7 +189,7 @@ const TestProgrammer = () => {
       "Orientación al resultado",
       "Habilidad Analítica",
     ];
-    const arrayP5= [
+    const arrayP5 = [
       "SQL",
       "Python",
       "NPM",
@@ -202,7 +206,7 @@ const TestProgrammer = () => {
       "Aprendizaje rápido",
       "Habilidad analítica",
       "Habilidades digitales",
-    ];  
+    ];
     const arrayP7 = [
       "Excel bussines intelligence",
       "R",
@@ -213,7 +217,7 @@ const TestProgrammer = () => {
       "Orientación al resultado",
       "Habilidad analítica",
     ];
-   
+
     const arrayP8 = [
       "Java",
       "Arquitectura de software AAA",
@@ -233,7 +237,7 @@ const TestProgrammer = () => {
     let contMatch06 = 0;
     let contMatch07 = 0;
     let contMatch08 = 0;
-    
+
     arrTemp1.forEach((element) => {
       if (arrayP1.includes(element)) {
         contMatch01 += 1;
@@ -260,20 +264,20 @@ const TestProgrammer = () => {
         contMatch08 += 1;
       }
     });
-    
-    const porcArr1 = Math.trunc((contMatch01 * 100)/arrayP1.length)
-    const porcArr2 = Math.trunc((contMatch02 * 100)/arrayP2.length)
-    const porcArr3 = Math.trunc((contMatch03 * 100)/arrayP3.length)
-    const porcArr4 = Math.trunc((contMatch04 * 100)/arrayP4.length)
-    const porcArr5 = Math.trunc((contMatch05 * 100)/arrayP5.length)
-    const porcArr6 = Math.trunc((contMatch06 * 100)/arrayP6.length)
-    const porcArr7 = Math.trunc((contMatch07 * 100)/arrayP7.length)
-    const porcArr8 = Math.trunc((contMatch08 * 100)/arrayP8.length)
+
+    const porcArr1 = Math.trunc((contMatch01 * 100) / arrayP1.length)
+    const porcArr2 = Math.trunc((contMatch02 * 100) / arrayP2.length)
+    const porcArr3 = Math.trunc((contMatch03 * 100) / arrayP3.length)
+    const porcArr4 = Math.trunc((contMatch04 * 100) / arrayP4.length)
+    const porcArr5 = Math.trunc((contMatch05 * 100) / arrayP5.length)
+    const porcArr6 = Math.trunc((contMatch06 * 100) / arrayP6.length)
+    const porcArr7 = Math.trunc((contMatch07 * 100) / arrayP7.length)
+    const porcArr8 = Math.trunc((contMatch08 * 100) / arrayP8.length)
 
     const arrayPor = [porcArr1, porcArr2, porcArr3, porcArr4, porcArr5, porcArr6, porcArr7, porcArr8]
-    
+
     const objRoutes = {
-     "Programación básica" : porcArr1,
+      "Programación básica": porcArr1,
       "FrontEnd": porcArr2,
       "BackEnd": porcArr3,
       "Fullstack": porcArr4,
@@ -283,57 +287,65 @@ const TestProgrammer = () => {
       "Ciberseguridad": porcArr8
     }
     setPorcRoutes(objRoutes)
-    return(arrayPor)
+    return (arrayPor)
   };
-  
-  
+
+
   return (
     <>
-    {showResult2 ? ( 
-       <form>
-       <p>
-         De las siguientes habilidades marca aquellas que deseas aprender(Por
-         favor escoger 8)
-       </p>
-       <div>
-         {testProg1.map((currentOption1) => (
-           <div key={currentOption1}>
-             <input
-               type="checkbox"
-               value={currentOption1.option1}
-               disabled={disabled}
-               onClick={addItemHandler}
-             />
-             <label> {currentOption1.option1}</label>
-           </div>
-         ))}
-       </div>
+    <Button onClick={() => navigate('/InitialTest')}> Regresar </Button>
 
-       <p>
-         ¿Con cuáles de estas habilidades blandas te identificas más? (Por
-         favor escoger 3)
-       </p>
-       <div>
-         {testProg2.map((currentOption2) => (
-           <div key={currentOption2}>
-             <input
-               type="checkbox"
-               value={currentOption2.option2}
-               disabled={disabled2}
-               onClick={addItemHandler2}
-             />
-             <label> {currentOption2.option2}</label>
-           </div>
-         ))}
-       </div>
-       <div>
-         <button onClick={() =>
-          {setShowResult2(false);
-          match2()}}>Ver Resultados</button>
-       </div>
-     </form>
-    ):(<Results2  objRoutes={porcRoutes}/>)}
-     
+      <Image src={logoBlanco} alt='logoMDT' margin='20px' w='15%' />
+      {showResult2 ? (
+        <Box color='#00014e' fontWeight={400} ml='20px' mr='8px'>
+          <form >
+          <Text fontSize='3xl' textAlign={'center'} >Test</Text>
+
+            <Container p={2}>
+            <Text fontWeight='bold'>
+              De las siguientes habilidades marca aquellas que deseas aprender(Por
+              favor escoger 8)
+            </Text>
+              {testProg1.map((currentOption1) => (
+                <div key={currentOption1}>
+                  <input
+                    type="checkbox"
+                    value={currentOption1.option1}
+                    disabled={disabled}
+                    onClick={addItemHandler}
+                  />
+                  <label> {currentOption1.option1}</label>
+                </div>
+              ))}
+            </Container>
+            <Container p={2}>
+            <Text fontWeight='bold' >
+              ¿Con cuáles de estas habilidades blandas te identificas más? (Por
+              favor escoger 3)
+            </Text>
+              {testProg2.map((currentOption2) => (
+                <div key={currentOption2}>
+                  <input
+                    type="checkbox"
+                    value={currentOption2.option2}
+                    disabled={disabled2}
+                    onClick={addItemHandler2}
+                  />
+                  <label> {currentOption2.option2}</label>
+                </div>
+              ))}
+            </Container>
+              <Box display='flex' justifyContent='center' mt='10px' mb='15px'>
+                <Button bg='#1f21b7' fontSize='16px' size='lg' color='white' alignItems='center'
+                  onClick={() => {
+                    setShowResult2(false);
+                    match2()
+                  }}>Ver Resultados</Button>
+              </Box>
+          </form>
+        </Box>
+      ) : (<Results2 objRoutes={porcRoutes} />)}
+
     </>
   );
 };
