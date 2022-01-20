@@ -19,7 +19,7 @@ const Home = () => {
                     </Flex>
                 </Box>
                 <Flex direction='column' h='150px' justifyContent='space-around'>
-                    <Button bg='#FF600E' fontSize='16px' size='lg' color='white' onClick={() => navigate('/InitialTest')}>Realizar test</Button>
+                    <Button bg='#FFDF37' fontSize='18px' size='lg' color='#7C5E10' onClick={() => navigate('/InitialTest')}>Realizar test</Button>
                     <Button fontSize='16px' size='lg' onClick={() => navigate('/')} >Resultados test anteriores</Button>
                 </Flex>
             </Flex>

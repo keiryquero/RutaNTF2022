@@ -8,7 +8,7 @@ const InitialTest = () => {
     return (
         <>
             <Flex bg='#00028A' direction='column' alignItems='center' h='100vh' justifyContent='center'  >
-                <Flex margin='10px' alignItems='flex-start'>
+                <Flex margin='10px'>
                     < FaChevronLeft color='white' w='10px'/>
                 </Flex>
                 <Flex direction='column' justifyContent='space-evenly' w='90%' h='250px' bg='white' borderWidth='1px' borderRadius='lg'>
