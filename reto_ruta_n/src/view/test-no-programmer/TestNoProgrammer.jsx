@@ -1,8 +1,11 @@
-import { useAccordionDescendantsContext } from '@chakra-ui/react';
+import { Container, useAccordionDescendantsContext } from '@chakra-ui/react';
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Results from "../results/Results";
+import { Box, Button, Image, Flex, Heading, Text } from '@chakra-ui/react';
+import logoBlanco from '../../img/Logo-f-blanco-1.svg';
+
 
 const TestNoProgrammer = () => {
 
@@ -131,12 +134,15 @@ const TestNoProgrammer = () => {
 
   return (
     <>
+    <Image src={logoBlanco} alt='logoMDT' margin='30px' w='13%' />
+    <Box  w='100%'  color='blue'>
     {showCheckboxes ? (
- <form action="submit">
- <p>
-   ¿En cuáles de las siguientes áreas te gustaría desarrollarte como
-   programador? (Por favor escoge 2)
- </p>
+    <form action="submit">
+    <Text fontSize='3xl' textAlign={'center'} >Test</Text> 
+    <Container p={2}>
+    <Text fontWeight='bold'>¿En cuáles de las siguientes áreas te gustaría desarrollarte como
+   programador? (Por favor escoge 2)</Text>
+  
  <div>
    {options.map((currentOption) => (
      <div key={currentOption}>
@@ -150,11 +156,10 @@ const TestNoProgrammer = () => {
      </div>
    ))}
  </div>
-
- <p>
-   ¿Con cuáles de estas habilidades blandas te identificas más?(Por favor escoge 3)
- </p>
- <div>
+ </Container>
+ <Container p={2}>
+ <Text fontWeight='bold' >¿Con cuáles de estas habilidades blandas te identificas más?(Por favor escoge 3)</Text> 
+  <div>
    {options2.map((currentOption2) => (
      <div key={currentOption2}>
        <input
@@ -168,15 +173,19 @@ const TestNoProgrammer = () => {
    ))}
  </div>
  {console.log("arreglo", arrTemp)}
- <div>
-   <button onClick={() => 
+ </Container>
+ <div> 
+ <Box display='flex' justifyContent='center'>
+   <Button bg='#1f21b7'fontSize='16px' size='lg' color='white' mt={'5px'} mb={'10px'}  onClick={() => 
    {setShowCheckboxes(false);
    match1()}}>
-     Ver ResultadO
-   </button>
+     Ver Resultado
+   </Button>
+   </Box>
  </div>
 </form>
     ): (<Results path={path}/>)}
+       </Box>
     </>
   );
 };
