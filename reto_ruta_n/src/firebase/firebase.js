@@ -1,10 +1,10 @@
 import {
-    getAuth,
-    createUserWithEmailAndPassword,
-    signInWithPopup,
-    signInWithEmailAndPassword,
-    GoogleAuthProvider,
-} from 'firebase/auth';
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
 import {
     collection,
     addDoc,
@@ -15,7 +15,7 @@ import {
     deleteDoc,
     where,
 } from 'firebase/firestore';
-
+import { useNavigate } from "react-router-dom";
 import { db } from './firebaseConfig';
 
 const userRegister = (email, password) => {
@@ -44,4 +44,5 @@ const loginEmailPassword = (email, password) => {
 
 };
 
-export { userRegister, loginEmailPassword }
+
+export { userRegister, loginEmailPassword };

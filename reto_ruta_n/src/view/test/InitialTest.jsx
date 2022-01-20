@@ -1,7 +1,8 @@
 //Vista de la pregunta inicial, ¿Tienes conocimientos en programación?
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button, Flex, Box, Text } from '@chakra-ui/react';
+import { Button, Flex, Box, Text, Image } from '@chakra-ui/react';
+
 
 const InitialTest = () => {
     const navigate = useNavigate();
