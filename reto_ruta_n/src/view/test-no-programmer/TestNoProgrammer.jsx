@@ -68,7 +68,7 @@ const TestNoProgrammer = () => {
   };
   
   const [path, setPath] = useState([]);
-  const [user, setUser] = useState("");
+ 
 
   console.log("pagina resultados", arrTemp[0]);
 
@@ -125,7 +125,7 @@ const TestNoProgrammer = () => {
       "Frontend: ", contMatch2,
       "Python :", contMatch3
     );
-    setUser("Programación Básica");
+   
     return contMatch1, contMatch2, contMatch3;
   }
 
